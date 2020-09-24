@@ -46,7 +46,7 @@ class Epic_games_browser():
         # It is then checked against the present date
         past = datetime.strptime(str(date), "%Y-%m-%d")
         present = datetime.now()
-        if past.date() < present.date():
+        if past.date() <= present.date():
             return True
 
 
